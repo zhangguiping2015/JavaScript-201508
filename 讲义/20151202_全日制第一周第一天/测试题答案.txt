@@ -1,5 +1,5 @@
 1、复习的ECMAScript中的基础知识
-1)JS中的数据类型包含：基本数据类型和引用数据类型，基本数据类型中有 number、string、boolean、null、undefined 引用数据类型中有 object、function 而常用到的数组、正则、对象、时间...都是object对象数据类型的
+1)JS中的数据类型包 含：基本数据类型和引用数据类型，基本数据类型中有 number、string、boolean、null、undefined 引用数据类型中有 object、function 而常用到的数组、正则、对象、时间...都是object对象数据类型的
   区别：基本数据类型又称之为值类型,是直接的操作值的；引用数据类型操作的是对内存空间的引用地址；
   var num1=12; var num2=num1; num2++;  num1->12
 

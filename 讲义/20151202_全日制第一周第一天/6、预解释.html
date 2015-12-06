@@ -43,18 +43,21 @@
     //    console.log(a, b);//undefined 2
 
     //如果一个函数中出现的变量不是私有的,那么会往其上级作用域查找,上级没有则继续查找,一直找到window为止,如果window也没有呢?
-    //获取:会报错
+    //获取值:会报错
     //    function fn() {
     //        console.log(num);//Uncaught ReferenceError: num is not defined
     //    }
     //    fn();
 
-    //设置:不是私有的,找全局,全局没有的话相当于给全局加一个
-    //    function fn() {
-    //        num = 13;//相当于给window增加了一个叫做num的属性名,属性值是13 window.num=13;
-    //    }
-    //    fn();
-    //    console.log(num);//13
+    //1:num=13, 不是私有的,找全局,全局没有的话相当于给全局加一个
+
+        function fn() {
+            num = 13;//相当于给window增加了一个叫做num的属性名,属性值是13 window.num=13;
+        }
+        fn();
+        console.log(num);//13
+
+    //js中如果在不进行任何特殊情况处理的情况下，上面的代码报错，下面的代码都不再执行了
 </script>
 </body>
 </html>
